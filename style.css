@@ -1,0 +1,292 @@
+/* define the global or root variable */
+:root {
+    --primaryColor: #103e89;
+    --backgroundColor: #F5EFE7;
+    --primaryAccentColor: #4f709c;
+    --secondaryColor: #d8c4b6;
+    --whiteColor: white;
+    --blackColor: #222222;
+    --primaryFont: 'Open Sans', sans-serif;
+
+    --navbarHeight: 3rem;
+    --cursiveFont: 'Pacifico', cursive;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+a:hover {
+    color: var(--primaryAccentColor);
+}
+
+/*Main CSS*/
+body {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    font-family: var(--primaryFont);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navigation {
+    background-color: var(--whiteColor);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-left: 20px;
+    width: 12rem;
+    align-items: center;
+}
+
+.logoImage {
+    padding: 8px;
+    height: 2rem;
+
+}
+
+.contactImage {
+    height: 2rem;
+    padding: 8px;
+    margin-right: 40px;
+}
+
+.menuItems {
+    flex-grow: 2;
+}
+
+.menuItem {
+    margin-left: 25px;
+
+}
+
+/*banner*/
+
+.banner {
+    display: flex;
+    height: 450px;
+    background: linear-gradient(45deg, var(--primaryAccentColor), var(--secondaryColor));
+    filter: drop-shadow(0px 3px 4px grey);
+    /*x,y,radius,color*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bannerLeft {
+    width: 50%;
+}
+
+
+
+.bannerImage {
+    height: 300px;
+    border-radius: 50%;
+}
+
+.greeting {
+    font-size: 2rem;
+    font-family: var(--cursiveFont);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.titlespan {
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+
+
+.description {
+    line-height: 2rem;
+    margin: 30px 0px;
+}
+
+.showCVButton {
+    background: linear-gradient(white, rgb(235, 235, 235), rgb(245, 245, 245));
+    padding: 10px 15px;
+    border-radius: 5px;
+    filter: drop-shadow(10px, 10px, 5px black);
+}
+
+.showCVButton:hover {
+    background: linear-gradient(grey, rgb(215, 215, 215));
+}
+
+/* services ssection */
+
+.Services {
+    margin: 80px;
+}
+
+.serviceText {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textSubHeading {
+    color: orangered;
+    font-size: 1.25rem;
+    letter-spacing: 0.4rem;
+}
+
+.textHeading {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.serviceCards {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.serviceCard {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    border-radius: 40px;
+    filter: drop-shadow(1px 1px 2px #aaaaaa);
+    margin: 15px;
+    padding: 40px;
+
+}
+
+.serviceCard:hover {
+    border: none;
+    filter: drop-shadow(3px 3px 8px grey);
+}
+
+.serviceIconDiv {
+    color: orangered;
+    display: inline-block;
+    background-color: var(--primaryColor);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30%;
+}
+
+.serviceIcon {
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+.serviceIconDiv:hover {
+    background-color: rgb(223, 122, 33);
+    border-radius: 30%;
+}
+
+.serviceTitle {
+    font-size: 1.60rem;
+    margin: 20px 0px;
+    color: black;
+}
+
+.serviceFeature {
+    font-size: 1rem;
+    margin: 10px 0px;
+    color: grey;
+}
+
+.serviceFeatureIcon {
+    font-size: 1rem;
+}
+
+.allheading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: orangered;
+    padding-top: 5%;
+}
+
+.about-section {
+    background-color: #4f709c;
+    background-image: url("about.jpg");
+}
+
+.meow {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    font-size: 25px;
+    color: white;
+}
+
+.merry {
+    text-align: center;
+
+    padding-bottom: 0%;
+}
+
+.harry {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: orangered;
+    padding-top: 0%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color: grey;
+    padding-top: 1%;
+    padding-bottom: 0.015%;
+
+}
+
+
+
+.text p {
+    margin-top: auto;
+    color: white;
+}
+
+.btn {
+    background-color: orangered;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    font-size: larger;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.btn:hover {
+    background: whitesmoke;
+    color: #ef6e12;
+    border: 1px solid #ef6e12;
+}
